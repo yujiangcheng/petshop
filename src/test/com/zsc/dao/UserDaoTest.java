@@ -14,7 +14,8 @@ public class UserDaoTest {
 	@Test
 	public void addUser() {
 		User user = new User("admin", "admin");
-		int num = userDao.addUser(user);
+		int num;
+		num = userDao.addUser(user);
 		if(num > 0) System.out.println("success");
 		else System.out.println("fail");
 	}

@@ -15,7 +15,10 @@ public class UserDaoServiceImpl implements UserDaoService {
 	@Override
 	public boolean addUser(User user) {
 		int num = userDao.addUser(user);
-		if(num > 0) return true;
+		if(num > 0)
+		{
+			return true;
+		}
 		return false;
 	}
 }
